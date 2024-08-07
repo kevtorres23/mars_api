@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans';
+    color: white;
+    background-color: black;
+}
+
+.login {
+    background: url(mars2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.login p {
+    margin-top: 30px;
+    color: #C8C8C8;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form h1 {
+    font-size: 54px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 19.5rem;
+}
+
+#form input {
+    background: none;
+    border: solid 1px #9c9c9c;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+#form input::placeholder {
+    color: #B2B2B2;
+    font-family: 'DM Sans';
+}
+
+.login-btn {
+    background-color: transparent;
+    padding: 10px 15px;
+    font-family: 'DM Sans';
+    color: white;
+    width: 19.5rem;
+    font-weight: 600;
+    font-size: 14px;
+    border: solid 1px white;
+    border-radius:20px;
+    margin-top: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    font-family: 'DM Sans';
+    padding: 40px 120px;
+    height: auto;
+    display: flex;
+}
+
+footer .subject{
+    justify-content: center;
+    margin-right: auto;
+}
+
+footer .subject, .author{
+    font-size: 14px;
+}
