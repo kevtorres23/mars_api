@@ -7,7 +7,7 @@ body {
 }
 
 .login {
-    background: url(mars2.jpg);
+    background: url(images/mars2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -20,14 +20,37 @@ body {
 }
 
 .login p {
-    margin-top: 30px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
     color: #C8C8C8;
+    font-size: 14px;
+}
+
+.login p:hover {
+    color: #ffffff;
+}
+
+.login p:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.login p:hover:after{
+    width: 100%;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .login-form h1 {
@@ -56,7 +79,7 @@ body {
     font-family: 'DM Sans';
 }
 
-.login-btn {
+#form .login-btn {
     background-color: transparent;
     padding: 10px 15px;
     font-family: 'DM Sans';
@@ -71,7 +94,7 @@ body {
     cursor: pointer;
 }
 
-.login-btn:hover {
+#form .login-btn:hover {
     color: black;
     background-color: white;
 }
@@ -79,13 +102,12 @@ body {
 footer {
     background-color: black;
     font-family: 'DM Sans';
-    padding: 40px 120px;
+    padding: 20px 120px;
     height: auto;
     display: flex;
 }
 
 footer .subject{
-    justify-content: center;
     margin-right: auto;
 }
 
